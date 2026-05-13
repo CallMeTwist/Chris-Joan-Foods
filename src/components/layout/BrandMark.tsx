@@ -6,8 +6,8 @@ export function BrandMark() {
       <img
         src="/images/logo.png"
         alt=""
-        width={44}
-        height={44}
+        width={60}
+        height={60}
         className="brand-logo"
       />
       <span className="brand-text">
