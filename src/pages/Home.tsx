@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+﻿import { useEffect, useRef } from 'react';
 import { Link, useOutletContext } from 'react-router-dom';
 import { brand, categoryBySlug, featuredProducts, testimonials } from '../data';
 import { Icon } from '../components/ui/Icon';
@@ -50,7 +50,7 @@ export default function Home() {
                 remember.
               </h1>
               <p className="lede" style={{ maxWidth: 520, marginTop: 24 }}>
-                Homemade Nigerian dishes, party-ready small chops and made-to-order cakes — prepared with care, freshness and a generous pour of love by Chris Joan.
+                Homemade Nigerian dishes, party-ready small chops and made-to-order cakes , prepared with care, freshness and a generous pour of love by Chris Joan.
               </p>
               <div style={{ display: 'flex', gap: 12, marginTop: 32, flexWrap: 'wrap' }}>
                 <Link to="/menu" className="btn btn-coral btn-lg">Order now <Icon.arrow /></Link>
@@ -213,7 +213,7 @@ function HomeAboutPreview() {
           <span className="eyebrow">Our story, in one bite</span>
           <h2 className="display-lg" style={{ marginTop: 12, marginBottom: 20 }}>Good food brings <span className="italic" style={{ color: 'var(--orange)' }}>happiness.</span> We cook with that in mind.</h2>
           <p className="lede" style={{ marginBottom: 14 }}>
-            Chris Joan started in a small home kitchen with one promise — that every plate that leaves us should taste like home. Today, we cook for hangouts, weddings, Sunday lunches and surprise anniversaries from Port Harcourt — and we deliver nationwide.
+            Chris Joan started in a small home kitchen with one promise , that every plate that leaves us should taste like home. Today, we cook for hangouts, weddings, Sunday lunches and surprise anniversaries from Port Harcourt , and we deliver nationwide.
           </p>
           <p className="lede" style={{ marginBottom: 24 }}>
             We hand-pick our ingredients at dawn, fry our small chops to order, and pipe every cake by hand. No shortcuts, no microwaves, no microwave-meal energy.
@@ -237,7 +237,7 @@ function HomeOccasions() {
   const items = [
     { title: 'Birthdays', img: '/images/food-09.jpeg', desc: 'Custom cakes, mini boxes, party trays.', tag: 'From ₦9,500' },
     { title: 'Weddings & engagements', img: '/images/food-01.jpeg', desc: 'Wholesale jollof, fried rice and small chops.', tag: 'From ₦80,000' },
-    { title: 'Office & hangouts', img: '/images/food-04.jpeg', desc: 'Friday trays delivered hot — never greasy.', tag: 'From ₦12,000' },
+    { title: 'Office & hangouts', img: '/images/food-04.jpeg', desc: 'Friday trays delivered hot , never greasy.', tag: 'From ₦12,000' },
   ];
   return (
     <section className="section">
@@ -274,7 +274,7 @@ function HomeTestimonials() {
       <div className="container-wide">
         <Reveal className="text-center" style={{ maxWidth: 760, margin: '0 auto 48px' }}>
           <span className="eyebrow on-dark">Kind words</span>
-          <h2 className="display-lg" style={{ marginTop: 10, color: 'var(--cream)' }}>"My grandmother used to make it<br />this way." — <span className="script" style={{ color: 'var(--gold)', fontSize: '0.9em' }}>actual customer</span></h2>
+          <h2 className="display-lg" style={{ marginTop: 10, color: 'var(--cream)' }}>"My grandmother used to make it<br />this way." , <span className="script" style={{ color: 'var(--gold)', fontSize: '0.9em' }}>actual customer</span></h2>
         </Reveal>
         <Reveal stagger style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 18 }}>
           {testimonials.map((t, i) => (

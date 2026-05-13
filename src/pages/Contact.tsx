@@ -1,4 +1,4 @@
-import type { FormEvent } from 'react';
+﻿import type { FormEvent } from 'react';
 import { brand } from '../data';
 import { Icon } from '../components/ui/Icon';
 import { Reveal } from '../components/ui/Reveal';
@@ -9,7 +9,7 @@ import { restaurantSchema, breadcrumbSchema } from '../lib/jsonld';
 export default function Contact() {
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (typeof window !== 'undefined') window.alert("Thanks — we'll be in touch shortly.");
+    if (typeof window !== 'undefined') window.alert("Thanks , we'll be in touch shortly.");
     e.currentTarget.reset();
   };
   return (
@@ -30,7 +30,7 @@ export default function Contact() {
               Let's plan <span className="italic" style={{ color: 'var(--orange)' }}>your next meal.</span>
             </h1>
             <p className="lede" style={{ marginTop: 18 }}>
-              Bookings, custom cakes, big orders, or just a quick question — drop us a line and we'll get back the same day.
+              Bookings, custom cakes, big orders, or just a quick question , drop us a line and we'll get back the same day.
             </p>
             <div style={{ marginTop: 30, display: 'flex', flexDirection: 'column', gap: 18 }}>
               <ContactRow ico={<Icon.whatsapp />} label="WhatsApp" value={brand.whatsapp} href={`https://wa.me/${brand.whatsappRaw}`} />

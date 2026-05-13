@@ -1,4 +1,4 @@
-/**
+﻿/**
  * jsonld.ts
  * Schema.org structured-data builders for Chris Joan Foods.
  */
@@ -11,7 +11,7 @@ export function restaurantSchema(): Record<string, unknown> {
     '@type': 'FoodEstablishment',
     name: brand.name,
     description:
-      'Homemade Nigerian dishes, party-ready small chops and made-to-order cakes — prepared fresh in Port Harcourt and delivered nationwide.',
+      'Homemade Nigerian dishes, party-ready small chops and made-to-order cakes , prepared fresh in Port Harcourt and delivered nationwide.',
     url: SITE_URL,
     telephone: brand.phone,
     email: brand.email,

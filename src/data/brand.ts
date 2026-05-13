@@ -1,4 +1,4 @@
-import type { BrandInfo } from '../types/domain';
+﻿import type { BrandInfo } from '../types/domain';
 
 export const brand: BrandInfo = {
   name: 'Chris Joan Food and More',
@@ -7,7 +7,7 @@ export const brand: BrandInfo = {
   whatsappRaw: '2348139720803',
   phone: '0806 348 2288',
   email: 'hello@chrisjoanfoods.ng',
-  address: 'Port Harcourt — delivered nationwide',
+  address: 'Port Harcourt , delivered nationwide',
   instagram: '@chrisjoanfoods',
   hours: [
     { day: 'Mon – Fri', time: '9:00am – 9:00pm' },
@@ -16,4 +16,4 @@ export const brand: BrandInfo = {
   ],
 };
 
-export const SITE_URL = 'https://chrisjoanfoods.ng'; // canonical domain — update if different
+export const SITE_URL = 'https://chrisjoanfoods.ng'; // canonical domain , update if different

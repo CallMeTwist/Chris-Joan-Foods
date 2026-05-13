@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+﻿import { useMemo } from 'react';
 import { Link, useOutletContext, useParams } from 'react-router-dom';
 import { categories, categoryBySlug, products } from '../data';
 import { Reveal } from '../components/ui/Reveal';
@@ -24,7 +24,7 @@ export default function Menu() {
   const seoTitle = activeCat ? activeCat.name : 'Full Menu';
   const seoDescription = activeCat
     ? activeCat.blurb
-    : 'Browse every dish Chris Joan makes — Nigerian soups, party jollof, small chops, cakes and more. Order via WhatsApp.';
+    : 'Browse every dish Chris Joan makes , Nigerian soups, party jollof, small chops, cakes and more. Order via WhatsApp.';
   const seoPath = activeCat ? `/menu/${activeCat.slug}` : '/menu';
 
   return (

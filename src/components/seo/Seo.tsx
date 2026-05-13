@@ -1,8 +1,8 @@
-/**
+﻿/**
  * Seo.tsx
  * Injects per-page head tags (title, meta, OG, Twitter, canonical).
  * Uses <Head> from vite-react-ssg, which is a thin wrapper over
- * react-helmet-async's <Helmet> — so it works with vite-react-ssg's
+ * react-helmet-async's <Helmet> , so it works with vite-react-ssg's
  * built-in SSR head extraction pipeline.
  */
 import { Head } from 'vite-react-ssg';

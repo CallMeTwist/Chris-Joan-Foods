@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+﻿import { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useGSAP } from '@gsap/react';
 import { brand } from '../data';
@@ -19,7 +19,7 @@ export default function About() {
     <>
       <Seo
         title="About Us"
-        description="Learn the story behind Chris Joan Foods — fresh Nigerian cuisine made with love, quality ingredients and zero shortcuts in Port Harcourt, delivered nationwide."
+        description="Learn the story behind Chris Joan Foods , fresh Nigerian cuisine made with love, quality ingredients and zero shortcuts in Port Harcourt, delivered nationwide."
         path="/about"
         image="/images/food-15.jpeg"
       />
@@ -33,13 +33,13 @@ export default function About() {
               Good food, <span className="italic" style={{ color: 'var(--orange)' }}>good memories.</span>
             </h1>
             <p className="lede" style={{ marginTop: 18, marginBottom: 14 }}>
-              Chris Joan started in a small home kitchen with one promise — that every plate we serve should taste like home. Today, we cook for hangouts, weddings, Sunday lunches and surprise anniversaries across Port Harcourt — and we deliver nationwide.
+              Chris Joan started in a small home kitchen with one promise , that every plate we serve should taste like home. Today, we cook for hangouts, weddings, Sunday lunches and surprise anniversaries across Port Harcourt , and we deliver nationwide.
             </p>
             <p className="lede" style={{ marginBottom: 14 }}>
               We hand-pick our ingredients at dawn, fry our small chops to order, and pipe every cake by hand. No shortcuts, no microwaves, no microwave-meal energy.
             </p>
             <p className="lede" style={{ marginBottom: 28 }}>
-              We believe the best food is the kind that brings people together — so we put as much love into a single tray of meat pies as we do into a wedding's worth of jollof.
+              We believe the best food is the kind that brings people together , so we put as much love into a single tray of meat pies as we do into a wedding's worth of jollof.
             </p>
             <Link to="/menu" className="btn btn-coral btn-lg">Browse the menu <Icon.arrow /></Link>
           </Reveal>
@@ -78,7 +78,7 @@ export default function About() {
               Meet <span className="italic" style={{ color: 'var(--orange)' }}>Chef Joan</span>, the heart behind the plate.
             </h2>
             <p className="lede leader-line" data-leader-line>
-              Joan runs the kitchen the same way her mother ran hers — early mornings at the market, a strict no-shortcuts rule, and one taste-test too many before anything leaves the pot. Every recipe on our menu is hers, refined over years of feeding family, friends and now the whole of Port Harcourt.
+              Joan runs the kitchen the same way her mother ran hers , early mornings at the market, a strict no-shortcuts rule, and one taste-test too many before anything leaves the pot. Every recipe on our menu is hers, refined over years of feeding family, friends and now the whole of Port Harcourt.
             </p>
             <p className="leader-line" data-leader-line>
               She seasons by feel, pipes every cake by hand, and personally signs off on every party tray that goes out the door. If a dish doesn't taste like home, it doesn't leave the kitchen.
@@ -127,7 +127,7 @@ export default function About() {
           <div style={{ maxWidth: 720, margin: '0 auto', textAlign: 'center' }}>
             <h2 className="display-lg" style={{ color: 'var(--cream)' }}>Talk to us. We bite back with love.</h2>
             <p style={{ marginTop: 18, color: 'rgba(250,246,236,0.72)', fontSize: 17 }}>
-              Bookings, custom cakes, big orders — message us on WhatsApp and we'll plan it together.
+              Bookings, custom cakes, big orders , message us on WhatsApp and we'll plan it together.
             </p>
             <div style={{ marginTop: 24, display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
               <a href={`https://wa.me/${brand.whatsappRaw}`} target="_blank" rel="noreferrer" className="btn btn-lg" style={{ background: '#25D366', color: 'white' }}>

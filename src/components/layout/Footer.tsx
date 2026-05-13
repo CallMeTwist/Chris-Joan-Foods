@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+﻿import { Link } from 'react-router-dom';
 import type { FormEvent } from 'react';
 import { brand, categories } from '../../data';
 import { Icon } from '../ui/Icon';
@@ -9,7 +9,7 @@ export function Footer() {
     e.preventDefault();
     const input = e.currentTarget.querySelector('input');
     if (input) input.value = '';
-    if (typeof window !== 'undefined') window.alert('Subscribed — thank you!');
+    if (typeof window !== 'undefined') window.alert('Subscribed , thank you!');
   };
   return (
     <footer className="footer">
@@ -30,7 +30,7 @@ export function Footer() {
               </span>
             </div>
             <p style={{ color: 'rgba(250,246,236,0.72)', fontSize: 14.5, maxWidth: 320, lineHeight: 1.7 }}>
-              Homemade Nigerian food, small chops and made-to-order cakes — delivered hot, fresh, and packed with love. Taste you'll always remember.
+              Homemade Nigerian food, small chops and made-to-order cakes , delivered hot, fresh, and packed with love. Taste you'll always remember.
             </p>
             <div style={{ display: 'flex', gap: 10, marginTop: 20 }}>
               <a className="icon-btn" href={`https://wa.me/${brand.whatsappRaw}`} target="_blank" rel="noreferrer" style={{ background: 'rgba(255,255,255,0.06)', borderColor: 'rgba(255,255,255,0.15)', color: '#25D366' }}><Icon.whatsapp /></a>
@@ -59,7 +59,7 @@ export function Footer() {
           </div>
           <div>
             <h5>Stay close</h5>
-            <p style={{ color: 'rgba(250,246,236,0.6)', fontSize: 13.5, marginBottom: 14 }}>Special trays, weekend menus, and the occasional new cake — straight to your inbox.</p>
+            <p style={{ color: 'rgba(250,246,236,0.6)', fontSize: 13.5, marginBottom: 14 }}>Special trays, weekend menus, and the occasional new cake , straight to your inbox.</p>
             <form className="newsletter" onSubmit={onSubmit} style={{ display: 'flex', gap: 8 }}>
               <input type="email" placeholder="you@example.com" required />
               <button type="submit" className="btn btn-coral btn-sm">Join</button>
