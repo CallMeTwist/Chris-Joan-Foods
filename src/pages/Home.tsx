@@ -74,7 +74,7 @@ export default function Home() {
             </div>
 
             {/* HERO BENTO COLLAGE */}
-            <div style={{ position: 'relative', aspectRatio: '1/1.05', minHeight: 480 }} data-hero-bento>
+            <div className="hero-bento" style={{ position: 'relative', aspectRatio: '1/1.05', minHeight: 480 }} data-hero-bento>
               <div data-bento-card style={{ position: 'absolute', top: '4%', left: '8%', width: '62%', height: '62%', borderRadius: 'var(--r-lg)', overflow: 'hidden', boxShadow: 'var(--shadow-lg)', transform: 'rotate(-2deg)' }}>
                 <img src="/images/food-04.jpeg" alt="Chris Joan small chops" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
@@ -200,13 +200,13 @@ function PromisesMarquee() {
 function HomeAboutPreview() {
   return (
     <section className="section" style={{ background: 'var(--cream-2)' }}>
-      <div className="container-wide" style={{ display: 'grid', gridTemplateColumns: '1fr 1.1fr', gap: 60, alignItems: 'center' }}>
-        <Reveal style={{ position: 'relative', aspectRatio: '1/1', minHeight: 420 }}>
+      <div className="container-wide about-preview-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1.1fr', gap: 60, alignItems: 'center' }}>
+        <Reveal className="about-preview-media" style={{ position: 'relative', aspectRatio: '1/1', minHeight: 420 }}>
           <img src="/images/food-15.jpeg" alt="" style={{ position: 'absolute', top: 0, left: '4%', width: '62%', height: '62%', objectFit: 'cover', borderRadius: 'var(--r-lg)', boxShadow: 'var(--shadow-md)' }} />
           <img src="/images/food-09.jpeg" alt="" className="floaty" style={{ position: 'absolute', bottom: 0, right: '2%', width: '58%', height: '58%', objectFit: 'cover', borderRadius: 'var(--r-lg)', boxShadow: 'var(--shadow-md)', border: '8px solid var(--cream-2)' }} />
-          <div style={{ position: 'absolute', top: '40%', left: '-2%', background: 'var(--chocolate)', color: 'var(--cream)', borderRadius: 'var(--r-md)', padding: '18px 22px', boxShadow: 'var(--shadow-md)' }}>
-            <div style={{ fontFamily: 'var(--font-display)', fontSize: 46, color: 'var(--gold)', lineHeight: 1 }}>5+ yrs</div>
-            <div style={{ fontSize: 11.5, letterSpacing: '.18em', textTransform: 'uppercase', opacity: 0.7, marginTop: 6 }}>cooking with love</div>
+          <div className="years-badge" style={{ position: 'absolute', top: '40%', left: '-2%', background: 'var(--chocolate)', color: 'var(--cream)', borderRadius: 'var(--r-md)', padding: '18px 22px', boxShadow: 'var(--shadow-md)' }}>
+            <div className="years-badge__num" style={{ fontFamily: 'var(--font-display)', fontSize: 46, color: 'var(--gold)', lineHeight: 1 }}>5+ yrs</div>
+            <div className="years-badge__lbl" style={{ fontSize: 11.5, letterSpacing: '.18em', textTransform: 'uppercase', opacity: 0.7, marginTop: 6 }}>cooking with love</div>
           </div>
         </Reveal>
         <Reveal>
@@ -246,7 +246,7 @@ function HomeOccasions() {
           <span className="eyebrow">Special occasions</span>
           <h2 className="display-lg" style={{ marginTop: 10 }}>From birthdays to <span className="italic" style={{ color: 'var(--burgundy)' }}>big weddings,</span> we cook the day for you.</h2>
         </Reveal>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 18 }} className="occasions">
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 18 }} className="occasions occasions-grid">
           {items.map((o, i) => (
             <Reveal key={i} className="card" style={{ padding: 0 }}>
               <div style={{ aspectRatio: '4/3', overflow: 'hidden' }}>
@@ -312,7 +312,7 @@ function HomeGalleryPreview() {
           </div>
           <Link to="/gallery" className="btn btn-ghost">Open gallery <Icon.arrow size={14} /></Link>
         </Reveal>
-        <Reveal stagger style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gridAutoRows: '160px', gap: 14 }}>
+        <Reveal stagger className="gallery-preview-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gridAutoRows: '160px', gap: 14 }}>
           {items.map((g, i) => (
             <Link key={i} to="/gallery" style={{ gridColumn: `span ${g.c}`, gridRow: `span ${g.r}`, borderRadius: 'var(--r-md)', overflow: 'hidden', position: 'relative' }}>
               <img src={g.src} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
@@ -331,7 +331,7 @@ function HomeCta() {
         <div style={{ background: 'var(--orange)', color: 'white', borderRadius: 'var(--r-lg)', padding: 'clamp(40px, 6vw, 72px)', position: 'relative', overflow: 'hidden' }}>
           <svg style={{ position: 'absolute', top: -30, right: -30, opacity: 0.15 }} width="280" height="280" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="white" /></svg>
           <svg style={{ position: 'absolute', bottom: -50, left: -20, opacity: 0.12 }} width="220" height="220" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="white" /></svg>
-          <div style={{ display: 'grid', gridTemplateColumns: '1.4fr 1fr', gap: 36, alignItems: 'center', position: 'relative' }}>
+          <div className="cta-grid" style={{ display: 'grid', gridTemplateColumns: '1.4fr 1fr', gap: 36, alignItems: 'center', position: 'relative' }}>
             <div>
               <span className="eyebrow" style={{ color: 'rgba(255,255,255,0.85)' }}>Hungry already?</span>
               <h2 className="display-lg" style={{ color: 'white', marginTop: 12, marginBottom: 18 }}>One message away from <span className="script" style={{ fontSize: '1em', color: 'var(--cream)' }}>your favourite meal.</span></h2>

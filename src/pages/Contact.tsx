@@ -23,7 +23,7 @@ export default function Contact() {
       <JsonLd data={breadcrumbSchema([{ name: 'Home', path: '/' }, { name: 'Contact', path: '/contact' }])} />
       <main className="page-enter">
       <section className="section">
-        <div className="container-wide" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'start' }}>
+        <div className="container-wide contact-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'start' }}>
           <Reveal>
             <span className="eyebrow">Say hello</span>
             <h1 className="display-lg" style={{ marginTop: 10 }}>

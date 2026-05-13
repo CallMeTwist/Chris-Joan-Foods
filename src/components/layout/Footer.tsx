@@ -17,13 +17,7 @@ export function Footer() {
         <div className="grid">
           <div>
             <div className="brand" style={{ marginBottom: 18 }}>
-              <span className="brand-mark">
-                <svg width="22" height="22" viewBox="0 0 32 32">
-                  <circle cx="16" cy="16" r="11" fill="none" stroke="currentColor" strokeWidth="1.4" />
-                  <path d="M16 9v14M9 16h14" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
-                  <circle cx="16" cy="16" r="2.3" fill="currentColor" />
-                </svg>
-              </span>
+              <img src="/images/logo.png" alt="" width={60} height={60} className="brand-logo" />
               <span className="brand-text">
                 <span className="a" style={{ color: 'var(--gold)', fontStyle: 'italic' }}>Chris Joan</span>
                 <span className="b" style={{ color: 'rgba(250,246,236,0.5)' }}>Food &amp; More</span>

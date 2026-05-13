@@ -2,7 +2,6 @@ export { brand, SITE_URL } from './brand';
 export { categories } from './categories';
 export { products } from './products';
 export { testimonials } from './testimonials';
-export { gallery } from './gallery';
 
 import { categories } from './categories';
 import { products } from './products';
