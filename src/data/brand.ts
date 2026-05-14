@@ -6,7 +6,7 @@ export const brand: BrandInfo = {
   whatsapp: '0813 972 0803',
   whatsappRaw: '2348139720803',
   phone: '0806 348 2288',
-  email: 'hello@chrisjoanfoods.ng',
+  email: 'joanaquira7@gmail.com',
   address: 'Port Harcourt , delivered nationwide',
   instagram: '@chrisjoanfoods',
   hours: [
