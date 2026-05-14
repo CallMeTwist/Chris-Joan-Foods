@@ -8,7 +8,7 @@ export const brand: BrandInfo = {
   phone: '0806 348 2288',
   email: 'joanaquira7@gmail.com',
   address: 'Port Harcourt , delivered nationwide',
-  instagram: '@chrisjoanfoods',
+  instagram: '@aquirajoan',
   hours: [
     { day: 'Mon – Fri', time: '9:00am – 9:00pm' },
     { day: 'Saturday', time: '10:00am – 10:00pm' },
